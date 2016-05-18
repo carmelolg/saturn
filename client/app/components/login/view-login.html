@@ -1,19 +1,86 @@
-<div class="middle-box text-center loginscreen  animated fadeInDown">
-    <div>
-      <div>
-          <h1 class="logo-element"></h1>
-      </div>
-      <h3>Benvenuto in Saturn</h3>
-        <form class="m-t" role="form" name="loginForm" ng-submit="login()" novalidate>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Username" minlength="8" md-maxlength="60" ng-model="credentials.email" tabindex="1" required autofocus>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" name="password" minlength="5" maxlength="16" ng-model="credentials.password" tabindex="2" required>
-            </div>
-            <button type="submit" class="btn btn-primary block full-width m-b" ng-disabled="loginForm.$invalid">Login</button>
-            <a ui-sref="recovery"><small>Hai dimenticato la tua password?</small></a>
-        </form>
-        <p class="m-t"> <small><strong>Saturn 2016</strong> Relationship management helper</small> </p>
+<div class="login-content">
+<!-- Login -->
+<div class="lc-block toggled" id="l-login">
+    <div class="lcb-float"><i class="zmdi zmdi-pin-account"></i></div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="credentials.email" placeholder="Username">
     </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control" ng-model="credentials.password" placeholder="Password">
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="p-relative ">
+        <div class="checkbox cr-alt">
+            <label class="c-gray">
+                <input type="checkbox" value="">
+                <i class="input-helper"></i>
+                Keep me signed in
+            </label>
+        </div>
+
+    </div>
+
+    <a ng-click="login()" class="btn btn-block btn-primary btn-float m-t-25">Sign In</a>
+
+    <ul class="login-navigation">
+        <li data-block="#l-register" class="bg-green">Register</li>
+        <li data-block="#l-forget-password" class="bg-orange">Forgot Password?</li>
+    </ul>
+</div>
+
+<!-- Register -->
+<div class="lc-block" id="l-register">
+    <div class="lcb-float"><i class="zmdi zmdi-pin-account"></i></div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email Address">
+    </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password">
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="checkbox cr-alt">
+        <label>
+            <input type="checkbox" value="">
+            <i class="input-helper"></i>
+            Accept the license agreement
+        </label>
+    </div>
+
+    <a href="" class="btn btn-block btn-success m-t-25">Register</a>
+
+    <ul class="login-navigation">
+        <li data-block="#l-login" class="bg-blue">Login</li>
+        <li data-block="#l-forget-password" class="bg-orange">Forgot Password?</li>
+    </ul>
+</div>
+
+<!-- Forgot Password -->
+<div class="lc-block" id="l-forget-password">
+    <div class="lcb-float"><i class="zmdi zmdi-pin-account"></i></div>
+
+    <small class="m-b-15 d-block">Nulla eu risus senns with lorem urabitur commodo lorem fringilla enim feugiat commodo sed ac lacus.</small>
+
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email Address">
+    </div>
+
+    <a href="" class="btn btn-block btn-warning">Reset Password</a>
+
+    <ul class="login-navigation">
+        <li data-block="#l-login" class="bg-blue">Login</li>
+        <li data-block="#l-register" class="bg-green">Register</li>
+    </ul>
+  </div>
 </div>

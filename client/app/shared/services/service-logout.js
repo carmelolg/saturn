@@ -8,9 +8,9 @@
 angular.module( 'saturnApp' )
   .factory( 'logoutSharedService', logoutSharedService );
 
-logoutSharedService.$inject = [ '$state', 'Utente', 'layoutCoreSharedService', '$localStorage' ];
+logoutSharedService.$inject = [ '$state', 'Utente', '$localStorage' ];
 
-function logoutSharedService( $state, Utente, layoutCoreSharedService, $localStorage ) {
+function logoutSharedService( $state, Utente, $localStorage ) {
   var factory = {};
 
   factory.logout = logout;
