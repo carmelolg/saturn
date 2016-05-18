@@ -1,0 +1,24 @@
+<div class="grid-thm">
+  <div class="row grid-thm-header">
+    <div class="col-sm-4">
+      Campo
+    </div>
+    <div class="col-sm-6">
+      Valore
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+  <div class="row grid-thm-body" dir-paginate="field in filtersSelected | filter:q | itemsPerPage: n" pagination-id="sole">
+    <div class="col-sm-4">
+      {{field.key}}
+    </div>
+    <div class="col-sm-6">
+      {{field.value}}
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn-danger btn btn-xs" ng-click="removeFilter($index)"><i class="fa fa-trash"></i></button>
+    </div>
+  </div>
+</div>

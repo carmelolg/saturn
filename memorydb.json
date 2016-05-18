@@ -1,0 +1,34 @@
+{
+  "ids": {
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Utente": 4,
+    "Address": 2,
+    "Category": 2,
+    "Contact": 2
+  },
+  "models": {
+    "AccessToken": {
+      "CKmHV2QTerInAjzJCPZFjJ7uPsRz05vnSwvk7T7HvAtuPBbZ4PxNSlElI0EmBtjZ": "{\"id\":\"CKmHV2QTerInAjzJCPZFjJ7uPsRz05vnSwvk7T7HvAtuPBbZ4PxNSlElI0EmBtjZ\",\"ttl\":1209600,\"created\":\"2016-04-30T10:08:58.262Z\",\"userId\":3}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Utente": {
+      "3": "{\"nome\":\"Carmelo\",\"cognome\":\"La Gamba\",\"username\":\"carmelolg\",\"password\":\"$2a$10$fpCBOD0NW7zUJd3sAIXwHOq3CcRy.jkaPV7N4NIa1FZ2hB2S2O/32\",\"email\":\"carmelo@carmelo.it\",\"id\":3}"
+    },
+    "Address": {
+      "1": "{\"street\":\"via Roma, Fraz. Porto Salvo\",\"number\":49,\"city\":\"Vibo Valentia\",\"region\":\"Calabria\",\"country\":\"Italia\",\"zip\":\"89900\",\"id\":1}"
+    },
+    "Category": {
+      "1": "{\"name\":\"MILITANTI CALABRIA\",\"id\":1}"
+    },
+    "Contact": {
+      "1": "{\"name\":\"Carmelo\",\"surname\":\"La Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":1,\"id\":1}",
+      "3": "{\"name\":\"Carmelo\",\"surname\":\"AS Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":2,\"id\":3}",
+      "2": "{\"name\":\"Giovanni\",\"surname\":\"Presinaci\",\"eMail\":\"giovanni@presinaci.it\",\"phone\":\"51165135133\",\"website\":\"\",\"addressId\":1,\"categoryId\":1,\"id\":2}"
+    }
+  }
+}

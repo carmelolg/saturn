@@ -1,0 +1,55 @@
+{
+  "name": "Contact",
+  "plural": "Contacts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "eMail": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "address": {
+      "type": "belongsTo",
+      "model": "Address",
+      "property": "addressId",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "property": "categoryId",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [{
+    "permission": "ALLOW",
+    "principalType": "ROLE",
+    "principalId": "$unauthenticated",
+    "accessType": "*"
+  }],
+  "methods": {}
+}

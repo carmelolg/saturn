@@ -1,0 +1,42 @@
+<div class="grid-thm">
+  <div class="row grid-thm-header">
+    <div class="col-sm-2">
+      Nome
+    </div>
+    <div class="col-sm-2">
+      Cognome
+    </div>
+    <div class="col-sm-2">
+      E-mail
+    </div>
+    <div class="col-sm-2">
+      Telefono
+    </div>
+    <div class="col-sm-2">
+      Web
+    </div>
+    <div class="col-sm-2">
+      Categoria
+    </div>
+  </div>
+  <div class="row grid-thm-body" dir-paginate="contact in list | filter:q | itemsPerPage: itemsPerPage" pagination-id="mercurio">
+    <div class="col-sm-2">
+      {{contact.name}}
+    </div>
+    <div class="col-sm-2">
+      {{contact.surname}}
+    </div>
+    <div class="col-sm-2">
+      {{contact.email}}
+    </div>
+    <div class="col-sm-2">
+      {{contact.phone}}
+    </div>
+    <div class="col-sm-2">
+      <div ng-if="contact.website"><a ng-click="openExternalLink(contact.website)">Link</a></div>
+    </div>
+    <div class="col-sm-2">
+      {{contact.category.name}}
+    </div>
+  </div>
+</div>

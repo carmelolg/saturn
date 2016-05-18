@@ -1,0 +1,26 @@
+{
+  "name": "Utente",
+  "plural": "Utenti",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "cognome": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [{
+    "permission": "ALLOW",
+    "principalType": "ROLE",
+    "principalId": "$unauthenticated",
+    "accessType": "*"
+  }],
+  "methods": {}
+}

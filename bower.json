@@ -1,0 +1,63 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-animate": "1.5.0",
+    "angular-aria": "1.5.0",
+    "angular-bootstrap": "1.1.2",
+    "angular-bootstrap-checkbox": "~0.4.0",
+    "angular-bootstrap-colorpicker": "~3.0.24",
+    "angular-cookies": "1.5.0",
+    "angular-messages": "1.5.0",
+    "angular-resource": "1.5.0",
+    "angular-route": "1.5.0",
+    "angular-sanitize": "1.5.0",
+    "angular-touch": "1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "animate.css": "~3.5.1",
+    "bootstrap-sass-official": "^3.3.6",
+    "jquery-flot": "~0.8.3",
+    "jquery-ui": "~1.11.4",
+    "jqueryui-touch-punch": "*",
+    "oclazyload": "~1.0.1",
+    "fontawesome": "~4.6.1",
+    "ngstorage": "~0.3.10",
+    "metisMenu": "~2.5.0",
+    "angular-utils-pagination": "~0.11.1"
+  },
+  "devDependencies": {
+    "angular-bootstrap-checkbox": "~0.4.0",
+    "angular-mocks": "1.5.0",
+    "angular-scenario": "~1.5.0"
+  },
+  "overrides": {
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "js-xlsx": {
+      "main": [
+        "dist/jszip.js",
+        "dist/xlsx.js"
+      ]
+    },
+    "fontawesome": {
+      "main": []
+    }
+  },
+  "appPath": "client",
+  "resolutions": {
+    "angular-bootstrap": "1.1.2",
+    "angular": "^1.5.0",
+    "jquery": "~2.1.4"
+  }
+}

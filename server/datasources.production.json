@@ -1,0 +1,16 @@
+{
+  "mongodb": {
+    "name": "mongodb",
+    "connector": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "database": "saturn_dev",
+    "username": "saturn_dev",
+    "password": "saturn_dev",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 1000
+    }
+  }
+}
