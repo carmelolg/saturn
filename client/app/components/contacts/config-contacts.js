@@ -13,15 +13,6 @@ angular
       .state('app.contacts.panel', {
         url: '/panel',
         controller: 'ContactsPanelController',
-        templateUrl: 'app/components/contacts/panel/view-panel.html',
-        configHeading: [{
-          title: 'Home',
-          url: 'app.home'
-        }, {
-          title: 'Contacts'
-        }, {
-          title: 'Panel',
-          strong: true
-        }]
+        templateUrl: 'app/components/contacts/panel/view-panel.html'
       });
   });

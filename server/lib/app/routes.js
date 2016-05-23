@@ -1,7 +1,7 @@
 module.exports = [
   '/',
   '^\/dashboard*',
-  // '^\/contacts*'
+  '^\/contacts*',
   '^\/login*',
   '^\/logout*'
 

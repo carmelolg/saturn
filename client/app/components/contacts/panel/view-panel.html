@@ -1,77 +1,17 @@
-<heading title="Contacts Manager"></heading>
-<div class="wrapper wrapper-content animated fadeInRight">
+<section id="content">
+  <div class="container">
+    <header class="page-header">
+      <h3>Contacts <small>Panel</small></h3>
+    </header>
 
-  <div class="pull-right btn btn-default" ng-click="isCollapsed = !isCollapsed">
-    <i class="fa fa-filter"></i>
-  </div>
-  <div uib-collapse="isCollapsed">
-    <div class="ibox-content">
-      <div class="row">
-        <div class="col-sm-6 pull-left">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label">Filtro</label>
-                <select class="form-control" ng-model="filter.key" ng-options="object.value as object.text for object in filtersSelectable">
-                  <option selected value="">--Seleziona--</option>
-                </select>
-              </div>
-            </div>
-            <div ng-show="thereIsAFilter()">
-              <div class="col-sm-4">
-                <div class="form-group">
-                  <label class="control-label">Valore</label>
-                  <input type="text" class="form-control" ng-model="filter.value" />
-                </div>
-              </div>
-              <div class="col-sm-2 ">
-                <div class="margin-top-25"></div>
-                <i class="btn btn-primary fa fa-plus" ng-click="addFilter()"></i>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label">Categoria</label>
-                <select class="form-control" ng-model="filter.categoryId" ng-options="object.id as object.name for object in categories" ng-change="addCategory(filter.categoryId)">
-                  <option selected value="">--Seleziona--</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="margin-top-25"></div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="pull-left">
-                <span class="btn btn-primary" ng-click="search()">Cerca</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 pull-right">
-          <div class="row">
-            <div class="col-sm-12">
-              <grid filter-query="q" lite=true items-per-page="n" list=filtersSelected ng-init="n = 5" pag-id="sole">
-                <div ng-include="'app/components/contacts/panel/view-grid-filters.html'">
-                </div>
-              </grid>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="ibox-content">
     <div class="row">
-      <div class="col-lg-12">
-        <grid filter-query="q" items-per-page="itemsPerPage" list=list ng-init="itemsPerPage = 10" pag-id="mercurio">
-          <div ng-include="'app/components/contacts/panel/view-grid-contacts.html'">
-          </div>
-        </grid>
+
+      <div class="col-sm-6">
       </div>
+
+      <div class="col-sm-6">
+      </div>
+
     </div>
   </div>
-</div>
+</section>

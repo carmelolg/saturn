@@ -2,24 +2,24 @@
 <html class="no-js" ng-app="saturnApp" strict-di>
 
 <head>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <meta name="format-detection" content="telephone=no">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta name="description" content="Saturn, an onlus helper">
-    <meta name="keywords" content="onlus, no-profit, helper, software, open-source">
+  <meta name="description" content="Saturn, an onlus helper">
+  <meta name="keywords" content="onlus, no-profit, helper, software, open-source">
 
-    <title>Saturn</title>
+  <title>Saturn</title>
 
-    <link href="assets/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="assets/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
-    <link href="assets/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link href="assets/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="assets/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+  <link href="assets/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 
-    <link href="assets/css/app.min.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/app.min.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,10 +42,15 @@
   <script src="app/app.run.js"></script>
   <script src="app/app.route.js"></script>
 
-  <!-- HOME  -->
+  <!-- DASHBOARD  -->
   <script src="app/components/dashboard/config-dashboard.js"></script>
   <script src="app/components/dashboard/controller-dashboard.js"></script>
   <script src="app/components/dashboard/directive-subscribers-stats/directive-subscribers-stats.js"></script>
+
+  <!-- CONTACTS  -->
+  <script src="app/components/contacts/config-contacts.js"></script>
+  <script src="app/components/contacts/panel/controller-panel.js"></script>
+  <script src="app/components/contacts/panel/service-panel.js"></script>
 
   <!-- HEADER -->
   <script src="app/components/header/directive-messages/directive-messages.js"></script>
@@ -62,6 +67,7 @@
   <script src="app/components/login/controller-login.js"></script>
 
   <!-- SHARED -->
+  <script src="app/shared/constants/constant-utils.js"></script>
   <script src="app/shared/directives/todo/directive-todo.js"></script>
   <script src="app/shared/services/service-sidebar.js"></script>
   <script src="app/shared/services/service-logout.js"></script>
