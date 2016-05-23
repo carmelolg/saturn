@@ -8,7 +8,7 @@ angular
       debug: false
     } );
 
-    $urlRouterProvider.when( '/', '/home' );
+    $urlRouterProvider.when( '/', '/dashboard' );
     $urlRouterProvider.otherwise( '/error/404' );
 
     $stateProvider

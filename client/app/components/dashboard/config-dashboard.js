@@ -5,9 +5,9 @@ angular
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $ocLazyLoadProvider) {
 
     $stateProvider
-      .state('app.home', {
-        url: '/home',
-        templateUrl: 'app/components/home/view-home.html',
-        controller: 'HomeController'
+      .state('app.dashboard', {
+        url: '/dashboard',
+        templateUrl: 'app/components/dashboard/view-dashboard.html',
+        controller: 'DashboardController'
       });
   });

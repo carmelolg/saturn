@@ -1,8 +1,8 @@
 module.exports = [
   '/',
-  '^\/home*',
+  '^\/dashboard*',
+  // '^\/contacts*'
   '^\/login*',
   '^\/logout*'
 
-  // '^\/contacts*'
 ];

@@ -1,0 +1,12 @@
+a {
+  cursor: pointer;
+}
+
+.logo-saturn {
+  background: url(../img/logo-saturn.png);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
