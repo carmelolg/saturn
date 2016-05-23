@@ -31,7 +31,9 @@
     "fontawesome": "~4.6.1",
     "ngstorage": "~0.3.10",
     "metisMenu": "~2.5.0",
-    "angular-utils-pagination": "~0.11.1"
+    "angular-utils-pagination": "~0.11.1",
+    "sparklines": "~1.0.0",
+    "angular-flot": "~0.0.16"
   },
   "devDependencies": {
     "angular-bootstrap-checkbox": "~0.4.0",
