@@ -15,7 +15,7 @@ ContactsPanelController.$inject = ['$scope', '$window', 'contactsPanelService', 
 function ContactsPanelController($scope, $window, contactsPanelService, ConstantUtils, Contact, Category) {
 
   // Variables
-
+  $scope.list = [];
   // Public methods
 
   // Other methods

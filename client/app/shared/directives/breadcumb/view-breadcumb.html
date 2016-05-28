@@ -1,0 +1,12 @@
+<ol class="breadcrumb">
+  <li ng-repeat="elem in tree">
+    <span ng-if="elem.url">
+      <a ui-sref="{{elem.url}}">
+        {{elem.title}}
+      </a>
+    </span>
+    <span ng-if="!elem.url">
+      {{elem.title}}
+    </span>
+  </li>
+</ol>

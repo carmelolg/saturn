@@ -13,6 +13,11 @@ angular
       .state('app.contacts.panel', {
         url: '/panel',
         controller: 'ContactsPanelController',
-        templateUrl: 'app/components/contacts/panel/view-panel.html'
+        templateUrl: 'app/components/contacts/panel/view-panel.html',
+        breadcumb: [ {
+          title: 'Contacts'
+        }, {
+          title: 'Panel'
+        } ]
       });
   });

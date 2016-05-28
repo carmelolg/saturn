@@ -1,17 +1,77 @@
+<breadcumb></breadcumb>
 <section id="content">
   <div class="container">
-    <header class="page-header">
-      <h3>Contacts <small>Panel</small></h3>
-    </header>
 
     <div class="row">
-
       <div class="col-sm-6">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">Search filters</div>
+          </div>
+          <div class="t-body tb-padding">
+          </div>
+        </div>
+
       </div>
 
       <div class="col-sm-6">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">Tools</div>
+          </div>
+          <div class="t-body tb-padding">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="tile">
+
+          <div class="table-responsive table-hover m-t-20">
+            <table class="table">
+              <thead class="bg-blue">
+                <tr>
+                  <th>No.</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>E-Mail</th>
+                  <th>Phone</th>
+                  <th>Website</th>
+                  <th>Category</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="contact in list">
+                  <td>{{$index}}</td>
+                  <td>{{contact.name}} </td>
+                  <td>{{contact.surname}} </td>
+                  <td>{{contact.eMail}} </td>
+                  <td>{{contact.phone}} </td>
+                  <td>{{contact.website}} </td>
+                  <td>{{contact.category.name}} </td>
+                  <td>
+                    <button type="button" class="btn btn-success"><i class="zmdi zmdi-phone"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="zmdi zmdi-mail-send"></i></button>
+                    <button type="button" class="btn btn-warning"><i class="zmdi zmdi-edit"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
+
   </div>
 </section>
