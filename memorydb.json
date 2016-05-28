@@ -6,7 +6,7 @@
     "Role": 1,
     "Utente": 4,
     "Address": 2,
-    "Category": 2,
+    "Category": 3,
     "Contact": 2
   },
   "models": {
@@ -23,7 +23,8 @@
       "1": "{\"street\":\"via Roma, Fraz. Porto Salvo\",\"number\":49,\"city\":\"Vibo Valentia\",\"region\":\"Calabria\",\"country\":\"Italia\",\"zip\":\"89900\",\"id\":1}"
     },
     "Category": {
-      "1": "{\"name\":\"MILITANTI CALABRIA\",\"id\":1}"
+      "1": "{\"name\":\"MILITANTI CALABRIA\",\"id\":1}",
+      "2": "{\"name\":\"CATEGORUA\",\"id\":2}"
     },
     "Contact": {
       "1": "{\"name\":\"Carmelo\",\"surname\":\"La Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":1,\"id\":1}",

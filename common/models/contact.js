@@ -16,15 +16,7 @@ module.exports = function(Contact) {
 
   function searchByFilter(filters, cb) {
     var _where = {};
-
-    // Find category id if it's present
-    if (filters.category) {
-      var _name = filters.category;
-      filters.category = {
-        name: _name
-      };
-    }
-
+    
     _where = _.clone(filters);
 
     Contact.find({

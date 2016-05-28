@@ -16,7 +16,11 @@ function ContactsPanelController($scope, $window, contactsPanelService, Constant
 
   // Variables
   $scope.list = [];
+  $scope.categories = [];
+  $scope.filters = {};
+
   // Public methods
+  $scope.search = search;
 
   // Other methods
   _init();
@@ -36,4 +40,10 @@ function ContactsPanelController($scope, $window, contactsPanelService, Constant
     });
   }
 
+  function search(){
+
+    contactsPanelService.search($scope.filters, function(data){
+      $scope.list = data;
+    });
+  }
 }

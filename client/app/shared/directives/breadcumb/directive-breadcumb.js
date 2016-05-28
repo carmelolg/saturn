@@ -22,6 +22,5 @@ function breadcumb($state) {
     $state.current.breadcumb.forEach(function(elem){
       scope.tree.push(elem);
     });
-    console.log(scope.tree);
   }
 }

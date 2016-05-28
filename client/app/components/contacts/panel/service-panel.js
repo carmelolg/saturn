@@ -10,26 +10,6 @@ function contactsPanelService(Contact, Category) {
   // Factory object
   var factory = {};
 
-  factory.fields = [{
-    text: 'Nome',
-    value: 'name'
-  }, {
-    text: 'Cognome',
-    value: 'surname'
-  }, {
-    text: 'e-Mail',
-    value: 'email'
-  }, {
-    text: 'Citta',
-    value: 'city'
-  }, {
-    text: 'Regione',
-    value: 'region'
-  }, {
-    text: 'Stato',
-    value: 'country'
-  }];
-
   factory.findContactsWithCategory = findContactsWithCategory;
   factory.getAllCategories = getAllCategories;
   factory.search = search;
@@ -48,14 +28,13 @@ function contactsPanelService(Contact, Category) {
 
   function search(filters, cb) {
     var where = {};
-
-    filters.forEach(function(filter) {
-      var toFindLike = '.*' + filter.value + '.*';
-      where[filter.key] = {
-        like: toFindLike,
-        options: 'i'
-      };
-    });
+    
+    Object.keys(filters).forEach(function(key) {
+        var toFindLike = '.*' + filters[key] + '.*';
+        where[key] = {
+          like: toFindLike
+        };
+      });
 
     Contact.searchByFilter(where, cb);
   }

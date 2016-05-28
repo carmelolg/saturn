@@ -3,25 +3,57 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
 
         <div class="tile">
           <div class="t-header th-alt bg-blue">
             <div class="th-title">Search filters</div>
           </div>
           <div class="t-body tb-padding">
+
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+              <input ng-model="filters.name" type="text" class="form-control" placeholder="Name">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+              <input ng-model="filters.surname" type="text" class="form-control" placeholder="Surname">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+              <input ng-model="filters.email" type="text" class="form-control" placeholder="E-Mail">
+            </div>
           </div>
         </div>
 
       </div>
-
-      <div class="col-sm-6">
+      <div class="col-sm-5">
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">Extra filters</div>
+          </div>
+          <div class="t-body tb-padding">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-star"></i></span>
+              <select ng-model="filters.categoryId" class="form-control">
+                <option value="">Category</option>
+                <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
 
         <div class="tile">
           <div class="t-header th-alt bg-blue">
-            <div class="th-title">Tools</div>
+            <div class="th-title">Actions</div>
           </div>
           <div class="t-body tb-padding">
+            <button type="button" ng-click="search()" class="btn btn-success"><i class="zmdi zmdi-search"></i>&nbsp;Search</button>
+            <!-- <button type="button" class="btn btn-success"><i class="zmdi zmdi-search"></i>&nbsp;Search</button> -->
           </div>
         </div>
 
