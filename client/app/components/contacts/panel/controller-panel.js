@@ -21,6 +21,10 @@ function ContactsPanelController($scope, $window, contactsPanelService, Constant
 
   // Public methods
   $scope.search = search;
+  $scope.call = call;
+  $scope.sendMail = sendMail;
+  $scope.edit = edit;
+  $scope.delete = deleteItem;
 
   // Other methods
   _init();
@@ -41,9 +45,24 @@ function ContactsPanelController($scope, $window, contactsPanelService, Constant
   }
 
   function search(){
-
     contactsPanelService.search($scope.filters, function(data){
       $scope.list = data;
     });
+  }
+
+  function call(phone){
+    console.log(phone);
+  }
+
+  function sendMail(){
+
+  }
+
+  function edit(){
+
+  }
+
+  function deleteItem(){
+
   }
 }

@@ -13,5 +13,6 @@ angular.module( 'saturnApp', [
   'ngStorage',
   'ui.router',
   'oc.lazyLoad',
-  'saturnServices'
+  'saturnServices',
+  'ui.bootstrap'
 ] );

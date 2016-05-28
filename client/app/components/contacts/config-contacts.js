@@ -2,8 +2,10 @@
 
 angular
   .module('saturnApp')
-  .config(function($stateProvider, $urlRouterProvider, $locationProvider, $ocLazyLoadProvider) {
+  .config([ '$stateProvider', '$urlRouterProvider', '$locationProvider', '$ocLazyLoadProvider', '$compileProvider',
+    function($stateProvider, $urlRouterProvider, $locationProvider, $ocLazyLoadProvider, $compileProvider) {
 
+    // $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|skype):/) ;
     $stateProvider
       .state('app.contacts', {
         url: '/contacts',
@@ -20,4 +22,4 @@ angular
           title: 'Panel'
         } ]
       });
-  });
+  }]);
