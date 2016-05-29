@@ -37,8 +37,8 @@
     "flot": "~0.8.3",
     "jquery.easy-pie-chart": "~2.1.6",
     "moment": "~2.13.0",
-    "bootstrap-sweetalert": "~1.0.0",
-    "bootstrap-select": "~1.10.0"
+    "bootstrap-select": "~1.10.0",
+    "angular-sweetalert": "~1.1.0"
   },
   "devDependencies": {
     "angular-bootstrap-checkbox": "~0.4.0",

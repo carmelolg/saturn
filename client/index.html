@@ -18,6 +18,7 @@
   <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
   <link href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
+  <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
 
   <link href="assets/css/app.min.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
@@ -45,7 +46,8 @@
   <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
   <script src="bower_components/moment/min/moment.min.js"></script>
   <script src="bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
-  <script src="bower_components/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+  <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="bower_components/angular-sweetalert/SweetAlert.min.js"></script>
   <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
 
   <!-- Angular App Script -->
@@ -53,6 +55,15 @@
   <script src="app/app.config.js"></script>
   <script src="app/app.run.js"></script>
   <script src="app/app.route.js"></script>
+
+
+  <!-- SHARED -->
+  <script src="app/shared/constants/constant-utils.js"></script>
+  <script src="app/shared/directives/todo/directive-todo.js"></script>
+  <script src="app/shared/directives/breadcumb/directive-breadcumb.js"></script>
+  <script src="app/shared/services/service-sidebar.js"></script>
+  <script src="app/shared/services/service-logout.js"></script>
+  <script src="app/shared/services/service-layout.js"></script>
 
   <!-- DASHBOARD  -->
   <script src="app/components/dashboard/config-dashboard.js"></script>
@@ -77,13 +88,6 @@
   <script src="app/components/login/config-login.js"></script>
   <script src="app/components/logout/config-logout.js"></script>
   <script src="app/components/login/controller-login.js"></script>
-
-  <!-- SHARED -->
-  <script src="app/shared/constants/constant-utils.js"></script>
-  <script src="app/shared/directives/todo/directive-todo.js"></script>
-  <script src="app/shared/directives/breadcumb/directive-breadcumb.js"></script>
-  <script src="app/shared/services/service-sidebar.js"></script>
-  <script src="app/shared/services/service-logout.js"></script>
 
   <!-- ANGULAR-SDK SERVICES -->
   <script src="app/shared/services/saturnServices.js"></script>

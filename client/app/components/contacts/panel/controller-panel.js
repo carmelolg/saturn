@@ -10,9 +10,9 @@
 angular.module('saturnApp')
   .controller('ContactsPanelController', ContactsPanelController);
 
-ContactsPanelController.$inject = ['$scope', '$window', 'contactsPanelService', 'ConstantUtils', 'Contact', 'Category'];
+ContactsPanelController.$inject = ['$scope', '$window', 'contactsPanelService', 'layoutService', 'ConstantUtils', 'Contact', 'Category'];
 
-function ContactsPanelController($scope, $window, contactsPanelService, ConstantUtils, Contact, Category) {
+function ContactsPanelController($scope, $window, contactsPanelService, layoutService, ConstantUtils, Contact, Category) {
 
   // Variables
   $scope.list = [];
@@ -44,25 +44,27 @@ function ContactsPanelController($scope, $window, contactsPanelService, Constant
     });
   }
 
-  function search(){
-    contactsPanelService.search($scope.filters, function(data){
+  function search() {
+    contactsPanelService.search($scope.filters, function(data) {
       $scope.list = data;
     });
   }
 
-  function call(phone){
+  function call(phone) {
     console.log(phone);
   }
 
-  function sendMail(){
+  function sendMail() {}
+
+  function edit() {
 
   }
 
-  function edit(){
-
-  }
-
-  function deleteItem(){
-
+  function deleteItem(id, index) {
+    Contact.deleteById(id, function(data) {
+      $scope.list.splice(index, 1);
+    }, function(err) {
+      console.error('Something was wrong.');
+    });
   }
 }

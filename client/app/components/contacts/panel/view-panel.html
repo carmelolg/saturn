@@ -91,7 +91,7 @@
                     <button ng-click="call(contact.phone)" tooltip-placement="top" uib-tooltip="Soon" tooltip-trigger="focus" type="button" class="btn btn-success"><i class="zmdi zmdi-phone"></i></button>
                     <button ng-click="sendMail(contact.eMail)" tooltip-placement="top" uib-tooltip="Soon" tooltip-trigger="focus" type="button" class="btn btn-primary"><i class="zmdi zmdi-mail-send"></i></button>
                     <button type="button" class="btn btn-warning"><i class="zmdi zmdi-edit"></i></button>
-                    <button type="button" class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
+                    <button ng-click="delete(contact.id, $index)" type="button" class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
 
                   </td>
                 </tr>

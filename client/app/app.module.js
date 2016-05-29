@@ -14,5 +14,6 @@ angular.module( 'saturnApp', [
   'ui.router',
   'oc.lazyLoad',
   'saturnServices',
+  'oitozero.ngSweetAlert',
   'ui.bootstrap'
 ] );

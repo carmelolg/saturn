@@ -7,7 +7,7 @@
     "Utente": 4,
     "Address": 2,
     "Category": 3,
-    "Contact": 2
+    "Contact": 22
   },
   "models": {
     "AccessToken": {
@@ -29,7 +29,24 @@
     "Contact": {
       "1": "{\"name\":\"Carmelo\",\"surname\":\"La Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":1,\"id\":1}",
       "2": "{\"name\":\"Giovanni\",\"surname\":\"Presinaci\",\"eMail\":\"giovanni@presinaci.it\",\"phone\":\"51165135133\",\"website\":\"\",\"addressId\":1,\"categoryId\":1,\"id\":2}",
-      "3": "{\"name\":\"Carmelo\",\"surname\":\"AS Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":2,\"id\":3}"
+      "3": "{\"name\":\"Carmelo\",\"surname\":\"AS Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":2,\"id\":3}",
+      "5": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":5,\"addressId\":0,\"categoryId\":0}",
+      "6": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":6,\"addressId\":0,\"categoryId\":0}",
+      "7": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":7,\"addressId\":0,\"categoryId\":0}",
+      "8": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":8,\"addressId\":0,\"categoryId\":0}",
+      "9": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":9,\"addressId\":0,\"categoryId\":0}",
+      "10": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":10,\"addressId\":0,\"categoryId\":0}",
+      "11": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":11,\"addressId\":0,\"categoryId\":0}",
+      "12": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":12,\"addressId\":0,\"categoryId\":0}",
+      "13": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":13,\"addressId\":0,\"categoryId\":0}",
+      "14": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":14,\"addressId\":0,\"categoryId\":0}",
+      "15": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":15,\"addressId\":0,\"categoryId\":0}",
+      "16": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":16,\"addressId\":0,\"categoryId\":0}",
+      "17": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":17,\"addressId\":0,\"categoryId\":0}",
+      "18": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":18,\"addressId\":0,\"categoryId\":0}",
+      "19": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":19,\"addressId\":0,\"categoryId\":0}",
+      "20": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":20,\"addressId\":0,\"categoryId\":0}",
+      "21": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":21,\"addressId\":0,\"categoryId\":0}"
     }
   }
 }
