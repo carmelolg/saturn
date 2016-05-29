@@ -32,6 +32,19 @@ Start with AngularJS, read the [Jhon Papa style guide](https://github.com/johnpa
 **Please be sure to be really ready**
 For me, is really important write a good and readable code. Dirty code is not permitted in this repository.
 
+## Setup
+
+1. Install Node.js ([Download page](https://nodejs.org/en/))
+
+* Download the repository at: https://github.com/carmelolg/saturn.git
+
+* Open Node.js terminal and go to the folder of project
+
+* Run `npm install` and then `bower install`
+
+* Run `grunt serve` and then at **localhost:9000** it will open saturn app.
+
+
 # Rules
 --------
 
