@@ -26,6 +26,8 @@ function ContactsPanelController($scope, $window, contactsPanelService, layoutSe
   $scope.edit = edit;
   $scope.delete = deleteItem;
 
+  // Utils methods
+
   // Other methods
   _init();
 
@@ -51,7 +53,6 @@ function ContactsPanelController($scope, $window, contactsPanelService, layoutSe
   }
 
   function call(phone) {
-    console.log(phone);
   }
 
   function sendMail() {}
@@ -61,10 +62,16 @@ function ContactsPanelController($scope, $window, contactsPanelService, layoutSe
   }
 
   function deleteItem(id, index) {
-    Contact.deleteById(id, function(data) {
-      $scope.list.splice(index, 1);
-    }, function(err) {
-      console.error('Something was wrong.');
+    layoutService.alertOnDelete(function(swalAlert) {
+      Contact.deleteById({
+        id: id
+      }, function(data) {
+        swalAlert();
+        $scope.list.splice(index, 1);
+      }, function(err) {
+        console.error(err);
+        layoutService.alert('Something was wrong.');
+      });
     });
   }
 }

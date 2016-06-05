@@ -15,5 +15,6 @@ angular.module( 'saturnApp', [
   'oc.lazyLoad',
   'saturnServices',
   'oitozero.ngSweetAlert',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angularUtils.directives.dirPagination'
 ] );

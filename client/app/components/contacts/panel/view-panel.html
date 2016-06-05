@@ -79,7 +79,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr ng-repeat="contact in list">
+                <tr dir-paginate="contact in list | itemsPerPage: 10">
                   <td>{{$index}}</td>
                   <td>{{contact.name}} </td>
                   <td>{{contact.surname}} </td>
@@ -97,6 +97,7 @@
                 </tr>
               </tbody>
             </table>
+            <dir-pagination-controls class="pull-right col-lg-2"></dir-pagination-controls>
           </div>
 
         </div>

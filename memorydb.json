@@ -10,9 +10,7 @@
     "Contact": 22
   },
   "models": {
-    "AccessToken": {
-      "Dc98VhL4uR5HsdN2gdK1Bp7Za3WSe5xLmpg7d90YiTFwXaF0e39LsCp4VfzN33r7": "{\"id\":\"Dc98VhL4uR5HsdN2gdK1Bp7Za3WSe5xLmpg7d90YiTFwXaF0e39LsCp4VfzN33r7\",\"ttl\":1209600,\"created\":\"2016-05-18T21:15:22.471Z\",\"userId\":3}"
-    },
+    "AccessToken": {},
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
@@ -30,8 +28,6 @@
       "1": "{\"name\":\"Carmelo\",\"surname\":\"La Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":1,\"id\":1}",
       "2": "{\"name\":\"Giovanni\",\"surname\":\"Presinaci\",\"eMail\":\"giovanni@presinaci.it\",\"phone\":\"51165135133\",\"website\":\"\",\"addressId\":1,\"categoryId\":1,\"id\":2}",
       "3": "{\"name\":\"Carmelo\",\"surname\":\"AS Gamba\",\"eMail\":\"carmelolagamba@hotmail.it\",\"phone\":\"321456789\",\"website\":\"www.carmelolagamba.altervista.it\",\"addressId\":1,\"categoryId\":2,\"id\":3}",
-      "5": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":5,\"addressId\":0,\"categoryId\":0}",
-      "6": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":6,\"addressId\":0,\"categoryId\":0}",
       "7": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":7,\"addressId\":0,\"categoryId\":0}",
       "8": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":8,\"addressId\":0,\"categoryId\":0}",
       "9": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":9,\"addressId\":0,\"categoryId\":0}",
@@ -45,8 +41,7 @@
       "17": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":17,\"addressId\":0,\"categoryId\":0}",
       "18": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":18,\"addressId\":0,\"categoryId\":0}",
       "19": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":19,\"addressId\":0,\"categoryId\":0}",
-      "20": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":20,\"addressId\":0,\"categoryId\":0}",
-      "21": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":21,\"addressId\":0,\"categoryId\":0}"
+      "20": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":20,\"addressId\":0,\"categoryId\":0}"
     }
   }
 }
