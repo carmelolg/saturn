@@ -27,9 +27,9 @@
   "validations": [],
   "relations": {
     "address": {
-      "type": "belongsTo",
+      "type": "embedsOne",
       "model": "Address",
-      "property": "addressId",
+      "property": "address",
       "options": {
         "validate": true,
         "forceId": false

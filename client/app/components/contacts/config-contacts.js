@@ -21,5 +21,15 @@ angular
         }, {
           title: 'Panel'
         } ]
+      })
+      .state('app.contacts.edit', {
+        url: '/edit/:id',
+        controller: 'EditContactController',
+        templateUrl: 'app/components/contacts/edit/view-edit.html',
+        breadcumb: [ {
+          title: 'Contacts'
+        }, {
+          title: 'Edit'
+        } ]
       });
   }]);

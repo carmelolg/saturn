@@ -1,0 +1,105 @@
+<breadcumb></breadcumb>
+<section id="content">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-5">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">{{contact.name}}&nbsp;{{contact.surname}}</div>
+          </div>
+          <div class="t-body tb-padding">
+
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+              <input ng-model="contact.name" type="text" class="form-control" placeholder="Name">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+              <input ng-model="contact.surname" type="text" class="form-control" placeholder="Surname">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+              <input ng-model="contact.eMail" type="text" class="form-control" placeholder="E-Mail">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-phone"></i></span>
+              <input ng-model="contact.phone" type="text" class="form-control" placeholder="Phone number">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-desktop-windows"></i></span>
+              <input ng-model="contact.website" type="text" class="form-control" placeholder="Website">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-star"></i></span>
+              <select ng-model="contact.categoryId" class="form-control">
+                <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-5">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">Address</div>
+          </div>
+          <div class="t-body tb-padding">
+
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+              <input ng-model="contact.address.street" type="text" class="form-control" placeholder="Street">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-zero"></i></span>
+              <input ng-model="contact.address.number" type="text" class="form-control" placeholder="n°">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-nature-people"></i></span>
+              <input ng-model="contact.address.city" type="text" class="form-control" placeholder="City">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-map"></i></span>
+              <input ng-model="contact.address.region" type="text" class="form-control" placeholder="Region">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-map"></i></span>
+              <input ng-model="contact.address.country" type="text" class="form-control" placeholder="Country">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="zmdi zmdi-pin-drop"></i></span>
+              <input ng-model="contact.address.zip" type="text" class="form-control" placeholder="Zip code">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-2">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-blue">
+            <div class="th-title">Actions</div>
+          </div>
+          <div class="t-body tb-padding">
+            <button type="button" ui-sref="app.contacts.panel" class="btn btn-default"><i class="zmdi zmdi-mail-reply"></i>&nbsp;Discard</button>
+            <button type="button" class="btn btn-success"><i class="zmdi zmdi-floppy"></i>&nbsp;Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
