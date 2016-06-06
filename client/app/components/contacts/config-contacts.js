@@ -31,5 +31,15 @@ angular
         }, {
           title: 'Edit'
         } ]
+      })
+      .state('app.contacts.import', {
+        url: '/import',
+        controller: 'importContactController',
+        templateUrl: 'app/components/contacts/import/view-import.html',
+        breadcumb: [ {
+          title: 'Contacts'
+        }, {
+          title: 'Import'
+        } ]
       });
   }]);

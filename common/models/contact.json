@@ -29,7 +29,7 @@
     "address": {
       "type": "embedsOne",
       "model": "Address",
-      "property": "address",
+      "property": "homeAddress",
       "options": {
         "validate": true,
         "forceId": false
