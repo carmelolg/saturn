@@ -96,11 +96,26 @@
 
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-5">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-green">
+            <div class="th-title">CSV import</div>
+          </div>
+          <div class="t-body tb-padding">
+            <input type="file" on-read-file="showContent($fileContent)" />
+            <span ng-if="content">
+              File loaded
+              <button type="button" class="btn btn-success pull-right" ng-click="import()"><i class="zmdi zmdi-floppy"></i>&nbsp;Import</button>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <div class="row">
-
-  </div>
 
   </div>
 </section>

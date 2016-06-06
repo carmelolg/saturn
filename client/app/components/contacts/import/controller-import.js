@@ -10,12 +10,18 @@ function importContactController($scope, contactsPanelService, Contact) {
   $scope.contact = {};
   $scope.categories = [];
 
+  $scope.showContent = function($fileContent) {
+    $scope.content = $fileContent;
+  };
+
   $scope.save = save;
 
   function save() {
     Contact.create($scope.contact, function(instance) {
       //TODO check integrity fields
-      Contact.address.create({id: instance.id}, $scope.contact.address, function(instance){
+      Contact.address.create({
+        id: instance.id
+      }, $scope.contact.address, function(instance) {
         $scope.contact = angular.copy({});
         console.log(instance.id + ' created.');
       });
