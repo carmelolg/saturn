@@ -1,15 +1,19 @@
 module.exports = function(Category) {
 
-  function findCategoryIDByName(obj, cb){
+  function findCategoryIDByName(obj, cb) {
     Category.findOne({
       where: {
         name: obj.name
       }
-    }, function(err, data){
-      if(err){
+    }, function(err, data) {
+      if (err && !data) {
         cb(err);
-      }else{
-        cb(null, data.id);
+      } else {
+        if(data){
+          cb(null, data.id);
+        }else{
+          cb(null, null);
+        }
       }
     });
   }

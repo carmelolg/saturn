@@ -17,6 +17,7 @@
     "async": "^1.5.2",
     "compression": "^1.6.1",
     "copy-to": "^2.0.1",
+    "csv-string": "^2.3.0",
     "flot": "^0.8.0-alpha",
     "fs": "0.0.2",
     "grunt": "^0.4.5",

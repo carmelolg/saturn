@@ -104,10 +104,13 @@
             <div class="th-title">CSV import</div>
           </div>
           <div class="t-body tb-padding">
-            <input type="file" on-read-file="showContent($fileContent)" />
-            <span ng-if="content">
+            <input type="file" on-read-file="readFileContent($fileContent)" accept=".csv"/>
+            <span ng-if="fileContent">
               File loaded
-              <button type="button" class="btn btn-success pull-right" ng-click="import()"><i class="zmdi zmdi-floppy"></i>&nbsp;Import</button>
+              <pre>
+                {{fileContent}}
+              </pre>
+              <button type="button" class="btn btn-success pull-right" ng-disabled="!fileContent" ng-click="importFile()"><i class="zmdi zmdi-floppy"></i>&nbsp;Import</button>
             </span>
           </div>
         </div>

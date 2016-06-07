@@ -7,7 +7,7 @@
     "Utente": 4,
     "Address": 2,
     "Category": 3,
-    "Contact": 28
+    "Contact": 214
   },
   "models": {
     "AccessToken": {},
@@ -32,7 +32,15 @@
       "19": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":19,\"addressId\":0,\"categoryId\":0}",
       "20": "{\"name\":\"string\",\"surname\":\"string\",\"eMail\":\"string\",\"phone\":\"string\",\"website\":\"string\",\"id\":20,\"addressId\":0,\"categoryId\":0}",
       "23": "{\"name\":\"Carmelo\",\"surname\":\"Pino\",\"eMail\":\"carmelo@pino.it\",\"phone\":\"789456123\",\"website\":\"www.giovani.it\",\"categoryId\":1,\"id\":23}",
-      "27": "{\"name\":\"Pino\",\"surname\":\"Crodino\",\"eMail\":\"pino@crodino.net\",\"phone\":\"963568795\",\"website\":\"www.pinocrodino.it\",\"categoryId\":2,\"id\":27,\"homeAddress\":{\"street\":\"via Gino\",\"number\":90,\"city\":\"Turin\",\"region\":\"Piedmont\",\"country\":\"Italy\",\"zip\":\"10100\"}}"
+      "27": "{\"name\":\"Pino\",\"surname\":\"Crodino\",\"eMail\":\"pino@crodino.net\",\"phone\":\"963568795\",\"website\":\"www.pinocrodino.it\",\"categoryId\":2,\"id\":27,\"homeAddress\":{\"street\":\"via Gino\",\"number\":90,\"city\":\"Turin\",\"region\":\"Piedmont\",\"country\":\"Italy\",\"zip\":\"10100\"}}",
+      "206": "{\"name\":\"Jonny\",\"surname\":\"Altare\",\"eMail\":\"sgiaflet@libero.it\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":206}",
+      "207": "{\"name\":\"Lo Scalzo\",\"surname\":\"Anna\",\"eMail\":\"loscalzo@cooperativaorso.it\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":207}",
+      "208": "{\"name\":\"Alberto\",\"surname\":\"Aureli\",\"eMail\":\"albertoau@libero.it\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":208}",
+      "209": "{\"name\":\"Simona\",\"surname\":\"Baroni\",\"eMail\":\"simosunflower@gmail.com\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":209}",
+      "210": "{\"name\":\"Giambeppe\",\"surname\":\"Battaglino\",\"eMail\":\"gianbattaglino@virgilio.it\",\"phone\":\"\",\"website\":\"\",\"categoryId\":2,\"id\":210}",
+      "211": "{\"name\":\"susanna\",\"surname\":\"bustino\",\"eMail\":\"susanna.bustino@gmail.com\",\"phone\":\"\",\"website\":\"\",\"categoryId\":2,\"id\":211}",
+      "212": "{\"name\":\"Marco\",\"surname\":\"Calvetto\",\"eMail\":\"marco.calvetto@acli.it\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":212}",
+      "213": "{\"name\":\"Pino\",\"surname\":\"Pulcino\",\"eMail\":\"pino.pulcino@gmail.com\",\"phone\":\"\",\"website\":\"\",\"categoryId\":1,\"id\":213}"
     }
   }
 }
