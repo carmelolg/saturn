@@ -1,7 +1,9 @@
 <breadcumb></breadcumb>
 <section id="content">
   <div class="container">
-
+    <header class="page-header">
+      <h3>Add manually a contact <small>Use the form and add you contact.</small></h3>
+    </header>
     <div class="row">
 
       <div class="col-sm-5">
@@ -96,29 +98,51 @@
 
       </div>
     </div>
+
+    <header class="page-header">
+      <h3>Import by file CSV <small>Load your csv with a correct header</small></h3>
+    </header>
+
     <div class="row">
       <div class="col-sm-5">
-
         <div class="tile">
           <div class="t-header th-alt bg-green">
             <div class="th-title">CSV import</div>
           </div>
           <div class="t-body tb-padding">
-            <input type="file" on-read-file="readFileContent($fileContent)" accept=".csv"/>
+            <input type="file" on-read-file="readFileContent($fileContent)" accept=".csv" />
             <span ng-if="fileContent">
-              File loaded
-              <pre>
-                {{fileContent}}
-              </pre>
-              <button type="button" class="btn btn-success pull-right" ng-disabled="!fileContent" ng-click="importFile()"><i class="zmdi zmdi-floppy"></i>&nbsp;Import</button>
-            </span>
+                File loaded
+              </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-5">
+        <div class="tile">
+          <div class="t-header th-alt bg-green">
+            <div class="th-title">CSV header example</div>
+          </div>
+          <div class="t-body tb-padding">
+            <pre>
+              <b>Separator</b> ';'
+              <b>Fields</b> name;surname;eMail;phone;website;category
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+
+        <div class="tile">
+          <div class="t-header th-alt bg-green">
+            <div class="th-title">Actions</div>
+          </div>
+          <div class="t-body tb-padding">
+            <button type="button" class="btn btn-success" ng-disabled="!fileContent" ng-click="importFile()"><i class="zmdi zmdi-floppy"></i>&nbsp;Import</button>
           </div>
         </div>
 
       </div>
     </div>
-  </div>
-
-
   </div>
 </section>

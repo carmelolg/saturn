@@ -29,6 +29,7 @@ function importContactController($scope, contactsPanelService, fileService, layo
     if($scope.fileContent){
       fileService.importCSV($scope.fileContent, function(result){
         layoutService.alert(result.length + ' contacts imported.');
+        $scope.fileContent = '';
       }, function(err){
         console.error(err);
         layoutService.alert('Ops. Something was wrong. ');
