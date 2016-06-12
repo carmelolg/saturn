@@ -1,1 +1,1 @@
-module.exports = require( 'lib/mailchimp/mailchimp-api.js' );
+module.exports = require( './builder.js' );

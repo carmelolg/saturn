@@ -1,0 +1,19 @@
+{
+  "name": "Mailchimp",
+  "plural": "Mailchimp",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [{
+    "permission": "ALLOW",
+    "principalType": "ROLE",
+    "principalId": "$unauthenticated",
+    "accessType": "*"
+  }],
+  "methods": {}
+}

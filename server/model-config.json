@@ -44,5 +44,9 @@
   "Contact": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "Mailchimp": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
