@@ -14,23 +14,43 @@ module.exports = function(Mailchimp) {
     });
   });
 
-  function getAllCampaigns(cb){
+  function getAllLists(cb) {
+    listsInstance.getAllLists(cb);
+  }
+
+  function getAllCampaigns(cb) {
     campaignsInstance.getAllCampaigns(cb);
   }
 
-  function getAllListsWithMembers(cb){
+  function getAllListsWithMembers(cb) {
     listsInstance.getAllListsWithMembers(cb);
   }
 
-  function countTotalMembers(cb){
+  function countTotalMembers(cb) {
     listsInstance.countTotalMembers(cb);
   }
 
+  Mailchimp.getAllLists = getAllLists;
   Mailchimp.getAllCampaigns = getAllCampaigns;
   Mailchimp.getAllListsWithMembers = getAllListsWithMembers;
   Mailchimp.countTotalMembers = countTotalMembers;
 
   // Public methods
+  Mailchimp.remoteMethod(
+    'getAllLists', {
+      description: 'Get all mailchimp\'s lists',
+      returns: {
+        arg: 'data',
+        type: 'object',
+        root: true
+      },
+      http: {
+        verb: 'get',
+        path: '/getAllLists'
+      }
+    }
+  );
+
   Mailchimp.remoteMethod(
     'getAllCampaigns', {
       description: 'Get all mailchimp\'s campaigns',

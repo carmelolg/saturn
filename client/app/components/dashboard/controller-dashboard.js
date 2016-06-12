@@ -10,16 +10,9 @@
 angular.module( 'saturnApp' )
   .controller( 'DashboardController', DashboardController );
 
-DashboardController.$inject = [ '$rootScope', '$scope', '$state', 'Utente', 'Mailchimp' ];
+DashboardController.$inject = [ '$rootScope', '$scope', '$state', 'Utente' ];
 
-function DashboardController( $rootScope, $scope, $state, Utente, Mailchimp ) {
-
-  Mailchimp.countTotalMembers(function(data){
-    console.log(data.count);
-  }, function(err){
-    console.error(err);
-  });
-
+function DashboardController( $rootScope, $scope, $state, Utente ) {
 
   if ( !Utente.isAuthenticated() ) {
     $state.go( 'login' );

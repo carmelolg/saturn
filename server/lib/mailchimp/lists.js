@@ -73,16 +73,30 @@ module.exports = {
       });
     }
 
-    function countTotalMembers(cb){
-      getAllListsWithMembers(function(err, data){
-        if(err){
+    function countTotalMembers(cb) {
+      getAllListsWithMembers(function(err, data) {
+        if (err) {
           cb(err);
-        }else{
-          var count = 0;
+        } else {
+          var totalMembers = 0;
+          var totalMembersLastMonth = 0;
+          var totalMembersLastYear = 0;
           var perform = function(object, callback) {
-            if(object.members && object.members.total){
-              count += object.members.total;
+            if (object.members && object.members.total) {
+              totalMembers += object.members.total;
             }
+            object.members.data.forEach(function(member) {
+              var date = new Date(Date.parse(member.timestamp));
+
+              // TODO mailchimp api - return 25 items !?!?!?!
+              if (date.getMonth() === new Date().getMonth()) {
+                totalMembersLastMonth++;
+              }
+              if (date.getFullYear() === new Date().getFullYear()) {
+                totalMembersLastYear++;
+              }
+            });
+
             callback();
           };
 
@@ -90,9 +104,14 @@ module.exports = {
             if (err) {
               cb(err);
             } else {
-              cb(null, {count: count});
+              cb(null, {
+                totalMembers: totalMembers,
+                totalMembersLastMonth: totalMembersLastMonth,
+                totalMembersLastYear: totalMembersLastYear
+              });
             }
           };
+
           async.map(data, perform, done);
 
         }
