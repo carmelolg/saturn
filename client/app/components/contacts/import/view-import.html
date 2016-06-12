@@ -110,24 +110,17 @@
             <div class="th-title">CSV import</div>
           </div>
           <div class="t-body tb-padding">
-            <input type="file" on-read-file="readFileContent($fileContent)" accept=".csv" />
-            <span ng-if="fileContent">
-                File loaded
-              </span>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-sm-5">
-        <div class="tile">
-          <div class="t-header th-alt bg-green">
             <div class="th-title">CSV header example</div>
-          </div>
-          <div class="t-body tb-padding">
             <pre>
               <b>Separator</b> ';'
               <b>Fields</b> name;surname;eMail;phone;website;category
             </pre>
+          </div>
+          <div class="t-body tb-padding">
+            <input type="file" on-read-file="readFileContent($fileContent)" accept=".csv" />
+            <span ng-if="fileContent">
+              File loaded
+            </span>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@
 var mcapi = require('mailchimp-api/mailchimp');
 
 module.exports = function(app){
-  var mc = new mcapi.Mailchimp('81bf93ec6d1ab60ee2accd065ead8c74-us13');
+  // var mc = new mcapi.Mailchimp('81bf93ec6d1ab60ee2accd065ead8c74-us13');
 
   //Factory object
   var factory = {};
@@ -22,8 +22,8 @@ module.exports = function(app){
 
   // Implementations
   function getAllCampaigns(){
-    mc.campaigns.list({}, function(campaignData) {
-    var campaigns = campaignData.data;
+    // mc.campaigns.list({}, function(campaignData) {
+    // var campaigns = campaignData.data;
 
 
     // mc.reports.summary({cid:req.params.id}, function(reportData) {
@@ -39,7 +39,7 @@ module.exports = function(app){
     //   }
     //   res.redirect('/reports');
     // });
-  });
+  // });
   }
   return factory;
 
